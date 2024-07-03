@@ -6,7 +6,9 @@
   "mixins": [
     "CraftingMenuMixin",
     "GameRules$BooleanValueAccessor",
-    "RecipeManagerAccessor"
+    "RecipeManagerAccessor",
+    "ResultContainerMixin",
+    "ResultSlotMixin"
   ],
   "client": [
     "ClientSuggestionsProviderAccessor"
