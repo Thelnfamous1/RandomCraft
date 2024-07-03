@@ -28,7 +28,14 @@ public abstract class ResultSlotMixin extends Slot {
     private void randomcraft$handleAwardUsedRecipes(ItemStack pStack, CallbackInfo ci){
         if(this.container instanceof AlternateRecipeHolder alternateRecipeHolder){
             if(alternateRecipeHolder.randomcraft$getAlternateRecipeUsed() != null){
-                this.player.playNotifySound(SoundEvents.NOTE_BLOCK_DIDGERIDOO, SoundSource.BLOCKS, 1.0F, 1.0F);
+                float pitch = 1.0F;
+                // pitch randomly between an octave below or above base note
+                int semitoneCount = this.player.getRandom().nextIntBetweenInclusive(-12, 12);
+                for (int i = 0; i < semitoneCount; i++)
+                {
+                    pitch *= 1.059463F; // 1.059463F is the value of a semitone
+                }
+                this.player.playNotifySound(SoundEvents.NOTE_BLOCK_DIDGERIDOO, SoundSource.BLOCKS, 1.0F, pitch);
             }
             alternateRecipeHolder.randomcraft$setAlternateRecipeUsed(null);
         }
