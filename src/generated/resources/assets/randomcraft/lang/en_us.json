@@ -1,0 +1,10 @@
+{
+  "commands.randomcraft.pair.recipe.success": "Paired recipe %s to recipe %s!",
+  "commands.randomcraft.query.recipe.failure": "Could not find recipe pairing for recipe %s!",
+  "commands.randomcraft.query.recipe.success": "Recipe %s is paired to recipe %s",
+  "commands.randomcraft.randomize.success": "Randomized crafting recipes!",
+  "commands.randomcraft.remove.recipe.failure": "Recipe %s already has no pairing!",
+  "commands.randomcraft.remove.recipe.success": "Recipe %s is no longer paired to recipe %s!",
+  "gamerule.randomcraft.do_random_crafting": "Random Crafting",
+  "gamerule.randomcraft.do_random_crafting.description": "If enabled, players will craft randomized items"
+}

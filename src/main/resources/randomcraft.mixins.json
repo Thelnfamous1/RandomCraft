@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "me.Thelnfamous1.randomcraft.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "randomcraft.refmap.json",
+  "mixins": [
+    "CraftingMenuMixin",
+    "GameRules$BooleanValueAccessor",
+    "RecipeManagerAccessor"
+  ],
+  "client": [
+    "ClientSuggestionsProviderAccessor"
+  ],
+  "minVersion": "0.8.5"
+}
